@@ -861,8 +861,8 @@
 
 #define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
 #define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
-#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
-#define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
+// #define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber // Seb
+// #define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling // Seb
 
 //===========================================================================
 //============================= Mechanical Settings =========================
@@ -1556,7 +1556,7 @@
 #define XY_PROBE_FEEDRATE (133*60)
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_FEEDRATE_FAST (20*60) // Seb
+#define Z_PROBE_FEEDRATE_FAST (30*60) // Seb
 
 // Feedrate (mm/min) for the "accurate" probe of each point
 #define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 2)
@@ -1606,7 +1606,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#define MULTIPLE_PROBING 3 //Seb
+#define MULTIPLE_PROBING 2 //Seb
 //#define EXTRA_PROBING    1
 
 /**
