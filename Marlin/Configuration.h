@@ -1238,7 +1238,7 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 // #define DEFAULT_MAX_FEEDRATE          { 2500, 2500, 100, 50 }
-#define DEFAULT_MAX_FEEDRATE          { 4000, 4000, 100, 50 } //Seb
+#define DEFAULT_MAX_FEEDRATE          { 4000, 4000, 100, 4000 } //Seb
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1251,7 +1251,7 @@
  * Override with M201
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 5000 } //Seb
+#define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 100, 5000 } //Seb
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
@@ -1266,7 +1266,7 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION           600    // X, Y, Z and E acceleration for printing moves //Seb
+#define DEFAULT_ACCELERATION          1500    // X, Y, Z and E acceleration for printing moves //Seb
 #define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts //Seb
 #define DEFAULT_TRAVEL_ACCELERATION    800    // X, Y, Z acceleration for travel (non printing) moves //Seb
 
